@@ -1,0 +1,114 @@
+.ViewprofileMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #141414a8;
+  color: #fff;
+}
+
+/* ===================
+  ViewprofileMain-btn
+==================== */
+
+.ViewprofileMain .ViewprofileMain-btn{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.ViewprofileMain .ViewprofileMain-btn button{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  border-style: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.ViewprofileMain .ViewprofileMain-btn button:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* ==================
+ ViewprofileMain-img-name
+====================== */
+
+.ViewprofileMain .ViewprofileMain-img-name{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.ViewprofileMain .ViewprofileMain-img-name img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+
+.ViewprofileMain .ViewprofileMain-img-name .ViewprofileMain-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 30%;
+}
+.ViewprofileMain .ViewprofileMain-img-name h6{
+  font-size: 3rem;
+  font-weight: var(--SemiBold);
+}
+
+.ViewprofileMain .ViewprofileMain-img-name p{
+  font-size: 1.5rem;
+  font-weight: var(--Regular);
+}
+/* ==============
+  edit
+================== */
+
+.ViewprofileMain .ViewprofileMain-name{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.ViewprofileMain .ViewprofileMain-name input{
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* =================
+   Responsive
+=================== */
+
+@media only screen and (max-width: 800px) {
+  .ViewprofileMain .ViewprofileMain-img-name .ViewprofileMain-name{
+    width: 100%;
+  }
+}

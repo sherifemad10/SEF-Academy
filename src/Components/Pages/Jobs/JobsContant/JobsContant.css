@@ -1,0 +1,197 @@
+.JobsContant {
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.686);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+/* ==================
+    JobsContant-header
+==================== */
+
+.JobsContant .JobsContant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+/* ==================
+  JobsContant-header-left
+===================== */
+
+.JobsContant .JobsContant-header .JobsContant-header-left {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+
+.JobsContant
+  .JobsContant-header
+  .JobsContant-header-left
+  .JobsContant-header-left-img {
+  width: 13rem;
+}
+
+.JobsContant
+  .JobsContant-header
+  .JobsContant-header-left
+  .JobsContant-header-left-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.JobsContant
+  .JobsContant-header
+  .JobsContant-header-left
+  .JobsContant-header-left-text
+  h5 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: var(--SemiBold);
+}
+
+.JobsContant
+  .JobsContant-header
+  .JobsContant-header-left
+  .JobsContant-header-left-text
+  p {
+  color: var(--secondary-color);
+}
+
+/* ====================
+   JobsContant-header-right
+============================ */
+.JobsContant .JobsContant-header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 1rem;
+}
+
+.JobsContant .JobsContant-header-right-salary p {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+.JobsContant .JobsContant-header-right-salary p span {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: var(--SemiBold);
+}
+
+.JobsContant .JobsContant-header-right-status p {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.JobsContant .JobsContant-header-right-status p span {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+  font-weight: var(--SemiBold);
+}
+
+/* ===================
+  JobsContant-dec
+====================== */
+.JobsContant .JobsContant-dec {
+  padding: 3rem 0;
+  width: 85%;
+}
+
+/* ================
+JobsContant-skills
+================== */
+.JobsContant .JobsContant-skills {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.JobsContant .JobsContant-skills h6 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: var(--SemiBold);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* ===================
+   JobsContant-postTime-details
+====================== */
+.JobsContant .JobsContant-postTime-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.JobsContant .JobsContant-postTime-details .JobsContant-postTime p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.7rem;
+}
+
+.JobsContant .JobsContant-postTime-details .JobsContant-postTime p span {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  font-weight: var(--SemiBold);
+  margin-top: 0.9rem;
+}
+
+.JobsContant .JobsContant-postTime-details .JobsContant-details button {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  cursor: pointer;
+}
+
+/* ==============
+    responsive
+================== */
+
+@media screen and (max-width: 450px) {
+  .JobsContant-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .JobsContant-header .JobsContant-header-right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 2rem;
+  }
+
+  .JobsContant-postTime-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+  }
+}

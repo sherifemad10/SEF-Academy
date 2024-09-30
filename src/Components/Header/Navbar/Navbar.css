@@ -1,0 +1,369 @@
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+
+/* ======================
+            Header  
+========================= */
+.header{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--third-color);
+  width: 100%;
+  padding: 10px;
+}
+
+/* =============
+   Header Link
+================= */
+
+.header a{
+  color: var(--secondary-color);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  padding: 0 3rem;
+  /* margin: 0 .5rem; */
+  font-weight: var(--Regular);
+  transition: 0.5s;
+
+}
+
+/* =============
+   Header Link (Hover)
+================= */
+.header a:hover{
+  color: var(--primary-color);
+}
+
+/* ============== 
+    navbar
+================= */
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* align-items: center; */
+}
+
+.navbar.scroll{
+  background-color: #1a1919c3;
+  backdrop-filter: blur(2rem);
+  /* width: 100%; */
+  padding: 0 2rem;
+  height: fit-content;
+  border-radius: 1rem;
+}
+
+/* ================
+     Navbar Logo
+=================== */
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 13rem;
+  margin-right: 5rem;
+}
+
+.Logo img {
+  width: 100%;
+}
+
+/* ================
+     Navbar Links
+=================== */
+
+.Links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 60px 0;
+}
+
+.Links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.Links ul li {
+  padding: 0 15px;
+}
+
+
+
+.Links ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: var(--Regular);
+  transition: 0.5s;
+  position: relative;
+}
+
+.Links ul li:not(:last-child) a::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.Links ul li:not(:last-child) a:hover::before{
+  width: 100%;
+}
+
+.Links ul li:not(:last-child) .active::before{
+  width: 100%;
+}
+
+
+
+/* ================
+     Navbar Button
+=================== */
+
+.Links button {
+  border: 2px solid var(--primary-color);
+  background: none;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: var(--Regular);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Links button:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  color: #fff;
+}
+
+/* ================
+     Navbar Tach list
+=================== */
+
+.Links .dropdown-group {
+  position: relative;
+}
+
+.Links .dropdown-list {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #201e1e3f;
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  padding-right: 60px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.Links .dropdown-list li {
+  padding: 5px;
+}
+/* ================
+     Navbar Courses list
+=================== */
+
+.Links .dropdown-group-courses {
+  position: relative;
+}
+
+.Links .dropdown-list-courses {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #201e1e3f;
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  padding-right: 60px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.Links .dropdown-list-courses li {
+  padding: 5px 0;
+}
+
+/* mobile */
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 5rem;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+
+/* =====================
+     responsive
+====================== */
+
+@media (max-width: 1285px) {
+
+  .hamburger{
+    display: block;
+    z-index: 200;
+    margin-right: 4rem;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Logo{
+    margin-left: 4rem;
+  }
+
+  
+
+  .Links{
+    position: relative;
+  }
+
+  .Links ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 40rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #201e1e3f;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 7rem 0;
+    transition: .5s;
+    overflow: auto;
+    padding-bottom: 10rem;
+  }
+
+  .Links .none{
+    transform: translateX(0);
+  }
+
+  .Links .flex{
+    transform: translateX(-100%);
+  }
+
+  .navbar.scroll{
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .scroll .Links ul{
+    background-color: #201e1ec0;
+    border-radius: 1rem;
+  }
+
+  .Links ul li{
+    padding: 1.5rem 0;
+  }
+  .Links ul li a{
+    font-size: 2rem;
+  }
+
+
+}
+
+@media (max-width: 500px){
+  .header a{
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+
+  .Links ul li{
+    padding: 1rem 0;
+  }
+  .Links ul{
+    position: absolute;
+    top: -10rem;
+    background-color: #201e1ed3;
+    padding: 8rem 0;
+  }
+}
+
+@media (max-width: 420px){
+  .Links ul li{
+    padding: 1.5rem 0;
+  }
+
+  .Links ul{
+    position: absolute;
+    top: -10rem;
+    background-color: #201e1ed3;
+    padding: 15rem 0;
+  }
+}
+
+
+
+
+
+
+

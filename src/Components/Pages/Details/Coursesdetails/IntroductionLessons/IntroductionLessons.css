@@ -1,0 +1,94 @@
+.IntroductionLessons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 55%;
+  margin-top: 10rem;
+  color: #fff;
+}
+
+/* ================
+   Introduction-courses
+====================== */
+
+.IntroductionLessons .Introduction-courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+  margin-bottom: 15rem;
+}
+
+.Introduction-courses h6 {
+  font-size: 3rem;
+}
+
+.Introduction-courses p {
+  font-size: 1.5rem;
+}
+
+/* ================
+   Lessons-courses
+====================== */
+
+.IntroductionLessons .Lessons-courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+}
+
+.Lessons-courses h6 {
+  font-size: 2.3rem;
+}
+
+.Lessons-courses .Accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+  background-color: #141414;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.Lessons-courses .Accordion .Accordion-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Lessons-courses .Accordion .Accordion-header .Accordion-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Lessons-courses .Accordion .Accordion-header .Accordion-icon button {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+/* ===================
+    Responsive
+==================== */
+
+@media only screen and (max-width: 930px) {
+  .IntroductionLessons {
+    width: 100%;
+    margin-top: 7rem;
+  }
+}

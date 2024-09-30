@@ -1,0 +1,71 @@
+/* ==================
+      article-header
+======================== */
+
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  width: 97%;
+}
+
+
+/* ==================
+      admin-panel
+======================== */
+
+.admin-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+  /* margin-bottom: 2rem; */
+}
+.admin-panel p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.admin-panel .AdminPanel {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.admin-panel .AdminPanel::before {
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* ==================
+      createArticle
+======================== */
+
+.createArticle button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: var(--SemiBold);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.createArticle button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}

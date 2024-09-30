@@ -1,0 +1,133 @@
+.ExamQuestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 10rem 0;
+  color: #fff;
+  width: 100%;
+}
+
+/* ================
+ ExamQuestions-wrapper
+================== */
+
+.ExamQuestions .ExamQuestions-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: #131313b3;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ExamQuestions .question-number p {
+  font-size: 1.8rem;
+  font-weight: var(--SemiBold);
+}
+
+.ExamQuestions .question-title h5 {
+  font-size: 2.7rem;
+  font-weight: var(--SemiBold);
+}
+
+.ExamQuestions .question-answar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 50%;
+}
+
+.ExamQuestions .question-answar-option {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.question-answar-option {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: white; /* Default background */
+  transition: background-color 0.3s ease;
+}
+
+.question-answar-option p {
+  margin: 0;
+}
+.question-answar-option:checked {
+  background-color: var(--primary-color);
+}
+.question-answar-option.correct {
+  background-color: white;
+  color: black;
+}
+
+.question-answar-option.incorrect {
+  background-color: white;
+  color: black;
+}
+
+.question-answar-option:hover {
+  background-color: var(--secondary-color);
+  color: #000;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+}
+
+.ExamQuestions .ExamQuestions-mark {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.ExamQuestions .finsh-exam {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 1rem;
+}
+.ExamQuestions .finsh-exam button {
+  padding: 1.1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.ExamQuestions .finsh-exam button:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 683px) {
+  .ExamQuestions .question-answar {
+    width: 100%;
+  }
+}

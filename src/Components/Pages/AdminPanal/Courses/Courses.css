@@ -1,0 +1,66 @@
+.AddedCourses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50rem;
+}
+
+/* ===============
+  Responsive
+===================== */
+
+@media screen and (max-width: 1300px) {
+  .sidebar{
+    display: none;
+  }
+  .MobilSidebar{
+    display: block !important;
+  }
+
+  .article-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    z-index: 2;
+  }
+  .posted-artical{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .UsercardMobile{
+    display: block !important;
+  }
+
+  .posted-artical-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .courses-table{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .AddedCourses {
+     padding-bottom: 100rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .AddedCourses {
+     padding-bottom: 150rem;
+  }
+}
+

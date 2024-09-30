@@ -1,0 +1,37 @@
+.PleaseLogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.PleaseLogin .PleaseLogin-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #3d3e3e;
+  backdrop-filter: blur(2rem);
+  border-radius: 1rem;
+  padding: 3rem;
+  gap: 10rem;
+}
+
+.PleaseLogin .PleaseLogin-wrapper p {
+  font-size: 2rem;
+  font-weight: 500;
+  flex: 1;
+  text-align: center;
+}
+
+.PleaseLogin .PleaseLogin-wrapper button {
+  padding: 1.1rem 1.7rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

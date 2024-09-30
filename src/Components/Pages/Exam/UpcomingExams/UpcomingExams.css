@@ -1,0 +1,134 @@
+.UpcomingExams {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding: 10rem 0;
+  color: #fff;
+  gap: 2.5rem;
+}
+
+.UpcomingExams h6 {
+  font-size: 2.7rem;
+}
+
+/* =================
+  UpcomingExams-card
+==================== */
+.UpcomingExams .UpcomingExams-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  background-color: #131313b3;
+}
+
+/* ======================
+   UpcomingExams-card-date-time
+========================== */
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-date-time,
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-title-instructor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-date-time {
+  flex: 1;
+  margin-right: 2rem;
+}
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-title-instructor {
+  flex: 2;
+  margin-right: 2rem;
+}
+
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-date-time p,
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-title-instructor p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-date-time p span,
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-title-instructor p span {
+  color: var(--primary-color);
+}
+
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-title-instructor h6 {
+  font-size: 2.2rem;
+}
+
+/* =================
+ UpcomingExams-card-level
+================== */
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-level {
+  flex: 1;
+}
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-level p {
+  font-size: 2.7rem;
+  font-weight: var(--SemiBold);
+}
+
+/* ==============
+UpcomingExams-card-NA
+==================== */
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-NA {
+  flex: 1;
+}
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-NA p {
+  font-size: 2.7rem;
+}
+
+/* ===================
+  UpcomingExams-card-btn
+====================== */
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-btn button {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.UpcomingExams .UpcomingExams-card .UpcomingExams-card-btn button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* ================
+   Responsive
+==================== */
+
+@media only screen and (max-width: 850px) {
+  .UpcomingExams .UpcomingExams-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .UpcomingExams .UpcomingExams-card .UpcomingExams-card-date-time,
+  .UpcomingExams .UpcomingExams-card .UpcomingExams-card-title-instructor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+.MobilSidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  background-color: #151515b6;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  display: none;
+  margin: 2rem auto;
+}
+
+.MobilSidebar button {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  cursor: pointer;
+  margin: 3rem 1rem;
+}
+
+/* ==================
+  responsive
+==================== */
+
+@media (max-width: 400px) {
+  .MobilSidebar button {
+    padding: 1rem 2rem;
+  }
+}

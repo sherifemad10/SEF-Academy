@@ -1,0 +1,85 @@
+.Main{
+  background-image: url(../../../../public/assets/main_background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.Main::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--third-color);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* ==================
+      Main-Wrapper
+======================== */
+.Main-Wrapper{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35%;
+  left: 80px;
+  padding: 10px;
+}
+
+
+/* ==================
+      MainTittle
+======================== */
+.Main .MainTittle{
+  z-index: 3;
+  width: 60%;
+  margin: 0 3rem;
+  margin-bottom: 4rem;
+}
+.Main .MainTittle h2{
+  color: #fff;
+  text-align: start;
+  font-weight: var(--SemiBold);
+  font-size: 6rem;
+}
+
+/* ==================
+responsive
+ ================= */
+
+@media (max-width: 600px) {
+  .Main .MainTittle{
+    z-index: 3;
+    width: 90%;
+    margin: 0 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .Main .MainTittle h2{
+    color: #fff;
+    text-align: start;
+    font-weight: var(--SemiBold);
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 541px) {
+  .Main-Wrapper{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+  }
+}
+
+

@@ -1,0 +1,47 @@
+.OnlineExam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding-bottom: 60rem;
+}
+
+.OnlineExam .Exam-wrapper {
+  background-image: url(../../../../public/assets/secondary_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.OnlineExam .Exam-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* ====================
+   hearder-online-exam
+====================== */
+.OnlineExam .hearder-online-exam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.OnlineExam .timerbar-inner {
+  background-color: var(--primary-color);
+  width: 90%;
+}

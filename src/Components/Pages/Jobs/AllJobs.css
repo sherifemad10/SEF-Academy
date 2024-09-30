@@ -1,0 +1,161 @@
+.AllJobs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  padding-bottom: 100rem;
+}
+
+/* ================
+    AllJobs-wrapper
+=================== */
+
+.AllJobs-wrapper {
+  background-image: url(../../../../public/assets/secondary_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.AllJobs-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* ==================
+  AllJobs-contant
+==================== */
+
+.AllJobs-contant {
+  position: relative;
+  z-index: 2;
+  padding: 20rem 0;
+}
+
+/* ==================
+  AllJobs-top-header
+==================== */
+
+.AllJobs-top-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  color: #fff;
+}
+
+.AllJobs-top-header .Jobs-portal {
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.AllJobs-top-header .Jobs-portal::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+/* =====================
+   AllJobs-body
+======================= */
+.AllJobs .AllJobs-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.AllJobs .alljob-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: calc(100% - 30rem);
+}
+
+.alljob-contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.AllJobs .Pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* ====================
+     Responsive
+==================== */
+
+@media screen and (max-width: 900px) {
+  .AllJobs .AllJobs-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .FilterIconMobile {
+    display: flex !important;
+    position: relative;
+  }
+
+  .JobSidebar {
+    position: absolute;
+    top: 38%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.874);
+    z-index: 2;
+    display: none !important;
+  }
+
+  .JobSidebar.active {
+    display: flex !important;
+  }
+
+  .AllJobs .alljob-wrapper {
+    width: 100%;
+  }
+
+  .AllJobs {
+    padding-bottom: 150rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .AllJobs {
+    padding-bottom: 250rem;
+  }
+}

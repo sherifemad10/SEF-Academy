@@ -1,0 +1,77 @@
+.sidebar{
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(23, 23, 23, 0.692);
+  z-index: 2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sidebar .user,
+.sidebar .Articless,
+.sidebar .Jobss,
+.sidebar .sidebar-Coursess{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebar .user .user-header h4,
+.sidebar .Articless .Articless-header h4,
+.sidebar .Jobss .Jobss-header h4,
+.sidebar .sidebar-Coursess .Coursess-headerr h4{
+  background-color: rgba(17, 16, 16, 0.566);
+  color: var(--secondary-color);
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.sidebar .user .user-body,
+.sidebar .Articless .Articless-body,
+.sidebar .Jobss .Jobss-body,
+.sidebar .sidebar-Coursess .Coursess-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  font-weight: var(--Regular);
+}
+
+.sidebar .user .user-body p,
+.sidebar .Articless .Articless-body p,
+.sidebar .Jobss .Jobss-body p,
+.sidebar .sidebar-Coursess .Coursess-body p{
+  cursor: pointer;
+  position: relative;
+  width: fit-content;
+  padding-bottom: .5rem;
+}
+
+.sidebar .user .user-body p::before,
+.sidebar .Articless .Articless-body p::before,
+.sidebar .Jobss .Jobss-body p::before,
+.sidebar .sidebar-Coursess .Coursess-body p::before{
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.sidebar .user .user-body p:hover::before,
+.sidebar .Articless .Articless-body p:hover::before,
+.sidebar .Jobss .Jobss-body p:hover::before,
+.sidebar .sidebar-Coursess .Coursess-body p:hover::before{
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+.Pagination{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  font-size: 3rem;
+  font-weight: var(--SemiBold);
+  color: var(--primary-color);
+  padding: 0 4rem;
+  cursor: pointer;
+  
+}
+
+.Pagination p{
+  cursor: pointer;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.Pagination p:hover{
+  color: var(--primary-color);
+}
+.Pagination p.active{
+  color: var(--primary-color);
+} 
+
+

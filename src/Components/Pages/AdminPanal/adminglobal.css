@@ -1,0 +1,352 @@
+
+/* ================
+    articles-wrapper
+=================== */
+.articles-wrapper {
+  background-image: url(../../../../public/assets/secondary_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.articles-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* ==================
+  articles-contant
+======================== */
+
+.articles-wrapper .articles-contant {
+  margin-top: 20rem;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* ==================
+      article-body
+======================== */
+
+.article-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px;
+  z-index: 2;
+  /* width: 100%; */
+}
+
+/* =============
+  posted-artical
+============== */
+
+.posted-artical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: calc(100% - 30rem);
+  z-index: 3;
+}
+
+/* =============
+  posted-artical-header
+============== */
+.article-body .posted-artical .posted-artical-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 2rem;
+}
+
+.article-body .posted-artical .posted-artical-header h5 {
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+.article-body .posted-artical .posted-artical-header .Articlesss h5::before {
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.article-body
+  .posted-artical
+  .posted-artical-header
+  .Articlesss
+  h5:hover::before {
+  width: 100%;
+}
+/* ==================
+     Search
+======================= */
+.search-artical .input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.input {
+  border-style: none;
+  height: 4rem;
+  width: 4rem;
+  /* padding: 10px; */
+  outline: none;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 3px var(--primary-color);
+  padding-right: 4rem;
+  color: #fff;
+}
+
+.input::placeholder,
+.input {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.7rem;
+}
+
+.input::placeholder {
+  color: #8f8f8f;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  outline: none;
+  border-style: none;
+  border-radius: 50%;
+  pointer-events: painted;
+  background-color: transparent;
+  transition: 0.2s linear;
+}
+
+.icon:focus ~ .input,
+.input:focus {
+  position: absolute;
+  right: 0;
+  box-shadow: none;
+  width: 250px;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 3px solid var(--primary-color);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+/* =================
+    posted-artical-body
+===================== */
+.posted-artical-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* ===========
+     Table
+=============== */
+.article-body table {
+  border-collapse: separate; 
+  border-spacing: 0 15px;
+  width: 100% ;
+}
+
+.article-body table th,
+.article-body td {
+  padding: 10px;
+  /* text-align: center; */
+  font-size: 14px;
+  color: #fff;
+}
+
+.article-body table th {
+  color: #fff;
+  font-weight: var(--SemiBold);
+  font-size: 1.7rem;
+  text-align: start;
+}
+
+.article-body table tbody tr{
+  background-color: #111111b1;
+  border-radius: 20px;
+}
+
+.article-body table td {
+  padding: 1.8rem;
+  font-size: 1.4rem;
+
+  
+}
+
+
+.article-body table td .published,
+.article-body table td .draft {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.article-body table td .draft {
+  padding: 1rem 3rem;
+
+  background-color: var(--secondary-color);
+}
+
+.article-body table .action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.article-body table td .editbtn {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* edit */
+.editBtn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.editBtn::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  background-color: rgb(102, 102, 141);
+  position: absolute;
+  z-index: 1;
+  transform: scale(0);
+  transition: all 0.3s;
+  border-radius: 50%;
+  filter: blur(1rem);
+}
+.editBtn:hover::before {
+  transform: scale(1);
+}
+.editBtn:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+}
+
+.editBtn svg {
+  height: 1.5rem;
+  fill: black;
+  z-index: 3;
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+.editBtn:hover svg {
+  transform: rotate(-15deg) translateX(0.5rem);
+}
+.editBtn::after {
+  content: "";
+  width: 2.5rem;
+  height: 1.5px;
+  position: absolute;
+  bottom: 19px;
+  left: -5px;
+  background-color: black;
+  border-radius: 2px;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-out;
+}
+.editBtn:hover::after {
+  transform: scaleX(1);
+  left: 0px;
+  transform-origin: right;
+}
+
+/* delete */
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  gap: 2px;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  transition-duration: 0.3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+  gap: 0;
+}
+
+.bin-top {
+  transform-origin: bottom right;
+}
+.button:hover .bin-top {
+  transition-duration: 0.5s;
+  transform: rotate(160deg);
+}
+

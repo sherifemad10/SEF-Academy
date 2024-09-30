@@ -1,0 +1,67 @@
+.Education-page {
+  width: 100%;
+}
+
+/* ====================
+  Education-page-form
+===================== */
+
+.Education-page .Education-page-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.Education-page .Education-page-form-degree,
+.Education-page .Education-page-form-university,
+.Education-page .Education-page-form-startyear,
+.Education-page .Education-page-form-graduate,
+.Education-page .Education-page-form-GPA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.Education-page .Education-page-form-degree label,
+.Education-page .Education-page-form-university label,
+.Education-page .Education-page-form-startyear label,
+.Education-page .Education-page-form-graduate label,
+.Education-page .Education-page-form-GPA label {
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+
+.Education-page .Education-page-form-degree input,
+.Education-page .Education-page-form-university input,
+.Education-page .Education-page-form-startyear input,
+.Education-page .Education-page-form-graduate input,
+.Education-page .Education-page-form-GPA input {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* ===================
+  Education-page-form-start-end-year
+  ===================== */
+
+.Education-page-form-start-end-year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}

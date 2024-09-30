@@ -1,0 +1,83 @@
+.CreateCVRoute {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: #151515;
+  border-radius: 1rem;
+  color: #fff;
+  overflow-x: scroll;
+}
+
+.CreateCVRoute::-webkit-scrollbar {
+  display: none;
+}
+
+.CreateCVRoute .main-information,
+.CreateCVRoute .summary,
+.CreateCVRoute .your-skills,
+.CreateCVRoute .your-experience,
+.CreateCVRoute .your-education,
+.CreateCVRoute .your-honers-awards,
+.CreateCVRoute .your-hobbies-interests,
+.CreateCVRoute .your-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.CreateCVRoute .main-information .main-information-number,
+.CreateCVRoute .summary .summary-number,
+.CreateCVRoute .your-skills .your-skills-number,
+.CreateCVRoute .your-experience .your-experience-number,
+.CreateCVRoute .your-education .your-education-number,
+.CreateCVRoute .your-honers-awards .your-honers-awards-number,
+.CreateCVRoute .your-hobbies-interests .your-hobbies-interests-number,
+.CreateCVRoute .your-links .your-links-number {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  /* padding: .5rem 1.5rem; */
+  width: 5rem;
+  height: 5rem;
+}
+
+.active-step p {
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  border: 1px solid var(--secondary-color);
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.CreateCVRoute .main-information .main-information-number p,
+.CreateCVRoute .summary .summary-number p,
+.CreateCVRoute .your-skills .your-skills-number p,
+.CreateCVRoute .your-experience .your-experience-number p,
+.CreateCVRoute .your-education .your-education-number p,
+.CreateCVRoute .your-honers-awards .your-honers-awards-number p,
+.CreateCVRoute .your-hobbies-interests .your-hobbies-interests-number p,
+.CreateCVRoute .your-links .your-links-number p {
+  font-weight: var(--SemiBold);
+  font-size: 3rem;
+}
+
+.CreateCVRoute .main-information .main-information-text h5,
+.CreateCVRoute .summary .summary-text h5,
+.CreateCVRoute .your-skills .your-skills-text h5,
+.CreateCVRoute .your-experience .your-experience-text h5,
+.CreateCVRoute .your-education .your-education-text h5,
+.CreateCVRoute .your-honers-awards .your-honers-awards-text h5,
+.CreateCVRoute .your-hobbies-interests .your-hobbies-interests-text h5,
+.CreateCVRoute .your-links .your-links-text h5 {
+  font-weight: var(--SemiBold);
+  font-size: 2rem;
+}

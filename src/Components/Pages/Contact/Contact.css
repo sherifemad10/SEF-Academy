@@ -1,0 +1,379 @@
+.Contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50rem;
+}
+
+/* ================
+    contact-wrapper
+=================== */
+
+.contact-wrapper{
+  background-image: url(../../../../public/assets/secondary_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.contact-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* ================
+contact-contant 
+=================== */
+.contact-contant {
+  margin-top: 20rem !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===================
+   conatct-page-body
+=================== */
+
+.Contact .conatct-page-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* ================
+conatct-page-body-info
+=================== */
+
+.Contact .conatct-page-body-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4rem;
+}
+
+.Contact .conatct-page-body-info-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  color: #fff;
+}
+.Contact .conatct-page-body-info-text h3{
+  font-size: 22px;
+}
+.Contact .conatct-page-body-info-text p{
+  font-size: 15px;
+}
+
+/* ====================
+  socail media
+======================= */
+
+.social-buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+/* ====================
+   conatct-page-body-form
+======================= */
+
+.Contact .conatct-page-body-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  background-color: #1414145a;
+  backdrop-filter: blur(2rem);
+  border-radius: 1rem;
+  padding: 3rem;
+  color: #fff;
+  width: 60rem;
+}
+
+.Contact .conatct-page-body-form h3{
+  font-size: 2.2rem;
+  font-weight: var(--SemiBold);
+}
+
+.Contact .conatct-page-body-form p{
+  font-size: 1.5rem;
+}
+
+/* ==================
+   contact-form
+======================= */
+.Contact .contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.Contact .contact-form-fist-lastName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+.Contact .contact-form label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.Contact .contact-form-email-number{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.Contact .contact-form-email,
+.Contact .contact-form-number{
+  flex: 1;
+}
+
+.Contact .contact-form-message{
+  width: 100%;
+}
+
+.Contact .conatct-page-body-form input,
+.Contact .conatct-page-body-form textarea{
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  width: 100%;
+  resize: none;
+}
+
+/* ============================
+   conatct-form-send-btn
+======================= */
+
+.Contact .contact-form-send-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.send-btn {
+  font-family: inherit;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.send-btn span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-btn svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.send-btn:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send-btn:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.send-btn:hover span {
+  transform: translateX(5em);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+/* ==================
+   responsive
+===============  */
+
+@media (max-width: 1022px) {
+  .Contact .conatct-page-body{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .Contact .conatct-page-body-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+
+  .Contact .conatct-page-body-form{
+    width: 100%;
+  }
+
+  .Contact .contact-form-fist,
+  .Contact .contact-form-last{
+    width: 100%;
+    flex: 1;
+    
+
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .Contact .contact-form-email-number,
+  .Contact .contact-form-fist-lastName{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+
+
+  .Contact .contact-form-email,
+.Contact .contact-form-number{
+  width: 100%;
+}
+}
+

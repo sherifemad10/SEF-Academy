@@ -1,0 +1,158 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.slideshow .slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.slideshow .slider-header h6 {
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+  margin: 0;
+  color: #fff;
+}
+
+.slideshow .buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 1rem;
+}
+
+.slideshow .buttons button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow .courses-card {
+  min-width: 30rem;
+  height: 40rem;
+  margin-right: 10px;
+  background-color: #191817;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow .courses-card .img-card {
+  width: 100%;
+  position: relative;
+}
+
+.slideshow .courses-card .img-card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: fill;
+  border-radius: 1rem;
+}
+.slideshow .courses-card .img-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+.slideshow .name-instructor {
+  margin-top: -6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.slideshow .name-instructor h6 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.slideshow .name-instructor span {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.slideshow .name-instructor p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.slideshow .data-lessoncount {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.slideshow .data-lessoncount p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.slideshow .data-lessoncount p span {
+  color: var(--primary-color);
+}
+
+.slideshow .enroll-btn button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.slideshow .enroll-btn button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.slideshow .details-card p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.slideshow .details-card p span {
+  color: var(--primary-color);
+  margin-top: 0.7rem;
+}

@@ -1,0 +1,81 @@
+.OnlineExamHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 5rem;
+  color: #fff;
+}
+
+/* =====================
+  OnlineExamHeader-tittle-mark-instructor
+===================== */
+
+.OnlineExamHeader .OnlineExamHeader-tittle-mark-instructor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.OnlineExamHeader .OnlineExamHeader-tittle-mark-instructor h4 {
+  font-size: 2.7rem;
+  font-weight: var(--SemiBold);
+}
+
+.OnlineExamHeader .OnlineExamHeader-tittle-mark-instructor p {
+  font-size: 1.5rem;
+}
+
+.OnlineExamHeader .OnlineExamHeader-tittle-mark-instructor p span {
+  font-weight: var(--SemiBold);
+  color: var(--primary-color);
+}
+
+/* =====================
+  OnlineExamHeader-date-time-duration
+===================== */
+
+.OnlineExamHeader .OnlineExamHeader-date-time-duration {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  background-color: #11111185;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+.OnlineExamHeader .OnlineExamHeader-date {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+
+.OnlineExamHeader .OnlineExamHeader-date p {
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.OnlineExamHeader .OnlineExamHeader-date .onlineExam-icon {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+}
+
+/* ====================
+    Responsive
+===================== */
+
+@media screen and (max-width: 683px) {
+  .OnlineExamHeader .OnlineExamHeader-date-time-duration {
+    width: 100%;
+  }
+
+  .OnlineExamHeader-date .OnlineExamHeader-text p {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,82 @@
+.OtherCoursesCardMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #151515b6;
+  border-radius: 1rem;
+  color: #fff;
+  width: 50rem;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+.OtherCoursesCardMobile .OtherCoursesCardMobile-img img {
+  border-radius: 1rem;
+}
+
+.OtherCoursesCardMobile h4 {
+  font-size: 3rem;
+  font-weight: var(--SemiBold);
+}
+
+.OtherCoursesCardMobile p {
+  font-size: 1.8rem;
+}
+
+.OtherCoursesCardMobile p span {
+  color: var(--primary-color);
+  font-weight: var(--SemiBold);
+}
+
+.OtherCoursesCardMobile .OtherCoursesCardMobile-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.OtherCoursesCardMobile .OtherCoursesCardMobile-action p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  cursor: pointer;
+}
+
+.OtherCoursesCardMobile .OtherCoursesCardMobile-action p:hover {
+  color: var(--primary-color);
+}
+
+.OtherCoursesCardMobile .OtherCoursesCardMobile-action button {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.OtherCoursesCardMobile .OtherCoursesCardMobile-action button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ===================
+     Responsive
+===================== */
+
+@media (max-width: 500px) {
+  .OtherCoursesCardMobile {
+    width: 100%;
+  }
+
+  .OtherCoursesCardMobile h4 {
+    font-size: 2rem;
+    font-weight: var(--SemiBold);
+  }
+}

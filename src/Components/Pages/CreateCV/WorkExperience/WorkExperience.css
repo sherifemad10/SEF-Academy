@@ -1,0 +1,134 @@
+.WorkExperience-page {
+  width: 100%;
+}
+
+/* ===================
+   WorkExperience-page-form
+====================== */
+
+.WorkExperience-page .WorkExperience-page-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}
+
+/* ===================
+  WorkExperience-page-form-wrapper
+====================== */
+
+.WorkExperience-page-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* ===================
+ WorkExperience-page-form-contant
+==================== */
+.WorkExperience-page .WorkExperience-page-form-contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  border: 2px dashed var(--primary-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 3;
+}
+
+.WorkExperience-page .WorkExperience-page-form-contant label {
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+.WorkExperience-page .WorkExperience-page-form-contant input {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* ======================
+  WorkExperience-page-form-postion-company
+====================== */
+
+.WorkExperience-page .WorkExperience-page-form-postion-company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* ===================
+  WorkExperience-page-form-Role
+================== */
+
+.WorkExperience-page .WorkExperience-page-form-Role {
+  width: 100%;
+}
+
+/* ================
+ WorkExperience-page-form-year
+================== */
+
+.WorkExperience-page .WorkExperience-page-form-year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* ==================
+ WorkExperience-page-form-dec
+==================== */
+.WorkExperience-page .WorkExperience-page-form-dec {
+  width: 100%;
+}
+
+.WorkExperience-page .WorkExperience-page-form-contant textarea {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  resize: none;
+}
+
+/* ==========================
+ WorkExperience-page-form-add-remove
+=============================== */
+.WorkExperience-page .WorkExperience-page-form-add-remove {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.WorkExperience-page .WorkExperience-page-form-add-remove button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,223 @@
+.StudentPortalMain{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 10rem 0;
+}
+
+.StudentPortalMain .registeredCourses{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 45%;
+}
+
+.StudentPortalMain .registeredCourses h5{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.StudentPortalMain .registeredCourses .registeredCourses-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  background-color: #11111183;
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.StudentPortalMain .registeredCourses .registeredCourses-card h6{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.StudentPortalMain .registeredCourses .registeredCourses-card p{
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.StudentPortalMain .registeredCourses .registeredCourses-card p span{
+  color: var(--primary-color);
+}
+
+/* =================
+    level-viewDetails
+===================== */
+
+.StudentPortalMain .registeredCourses .level-viewDetails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.StudentPortalMain .registeredCourses .level-viewDetails p{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.StudentPortalMain .registeredCourses .level-viewDetails button{
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.StudentPortalMain .registeredCourses .level-viewDetails button:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* ===================
+   Exam-Upcoming
+====================== */
+
+.StudentPortalMain .Exam-Upcoming{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 38%;
+}
+
+.StudentPortalMain .Exam-Upcoming h5{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* ===============
+  Exam-Upcoming-card
+================== */
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .Exam-Upcoming-card-date{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #11111183;
+  gap: .5rem;
+  border-radius: 1rem;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .Exam-Upcoming-card-date p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 2rem;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .Exam-Upcoming-card-date .day{
+  background-color: var(--primary-color);
+  width:100%;
+  text-align: center;
+  padding: .3rem 1rem;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .Exam-Upcoming-card-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .Exam-Upcoming-card-text h6{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .Exam-Upcoming-card-text p{
+  font-size: 1.5rem;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .Exam-Upcoming-card-text p span{
+  color: var(--primary-color);
+  margin-right: .5rem;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .level-timer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .level-timer p{
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.StudentPortalMain .Exam-Upcoming .Exam-Upcoming-card .level-timer p span{
+  margin-right: .5rem;
+  color: var(--primary-color);
+}
+
+/* ==============
+   Responsive
+================ */
+
+@media (max-width: 820px) {
+  .StudentPortalMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+  }
+
+  .StudentPortalMain .registeredCourses,
+  .StudentPortalMain .Exam-Upcoming{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .Exam-Upcoming-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+
+}
+
+
+
+
+

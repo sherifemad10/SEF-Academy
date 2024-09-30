@@ -1,0 +1,45 @@
+.JobsHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 5rem 0;
+}
+
+/* =================
+  JobsHeader-looking-job
+================== */
+
+.JobsHeader .JobsHeader-looking-job {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  color: #fff;
+  flex: 1;
+}
+
+.JobsHeader .JobsHeader-looking-job h4 {
+  font-size: 3.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.JobsHeader .JobsHeader-looking-job p {
+  font-size: 1.5rem;
+  font-weight: var(--Regular);
+  color: var(--secondary-color);
+}
+
+/* =================
+  JobsHeader-search
+================== */
+.JobsHeader .JobsHeader-search {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  flex: 2;
+  width: 100%;
+}

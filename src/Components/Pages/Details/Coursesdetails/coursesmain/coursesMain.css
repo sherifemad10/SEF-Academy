@@ -1,0 +1,172 @@
+.CoursesMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.CoursesMain .coursesMain-img {
+  display: flex;
+  flex: 4;
+  justify-content: start;
+}
+
+.CoursesMain .coursesMain-img img {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+/* ===================
+    coursesMain-detalis
+====================== */
+
+.CoursesMain .coursesMain-detalis {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.CoursesMain .coursesMain-detalis .lesson-level {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  /* gap: 3rem; */
+}
+
+.CoursesMain .coursesMain-detalis .lesson-level .Lesson,
+.CoursesMain .coursesMain-detalis .lesson-level .Level {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  font-size: 1.8rem;
+  background-color: #131312a9;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  color: var(--secondary-color);
+}
+
+.CoursesMain .coursesMain-detalis .lesson-level .Lesson {
+  margin-right: 1rem;
+}
+
+.CoursesMain .coursesMain-detalis .lesson-level .Lesson .Lesson-icon,
+.CoursesMain .coursesMain-detalis .lesson-level .Level .Level-icon {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.CoursesMain .coursesMain-detalis .lesson-level .Lesson .Lesson-text,
+.CoursesMain .coursesMain-detalis .lesson-level .Level .Level-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+/* =======================
+coursesMain-detalis-text
+========================== */
+
+.CoursesMain .coursesMain-detalis .coursesMain-detalis-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.CoursesMain .coursesMain-detalis .coursesMain-detalis-text p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.CoursesMain .coursesMain-detalis .coursesMain-detalis-text p span {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+/* ================
+  coursesMain-btn
+================== */
+
+.CoursesMain .coursesMain-detalis .coursesMain-btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.CoursesMain .coursesMain-detalis .coursesMain-btn .enroll {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.CoursesMain .coursesMain-detalis .coursesMain-btn .enrolled {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* ================
+   Responsive
+=================== */
+
+@media only screen and (max-width: 930px) {
+  .CoursesMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5rem;
+    gap: 3rem;
+    width: 100%;
+  }
+
+  .CoursesMain .coursesMain-img,
+  .CoursesMain .coursesMain-detalis {
+    width: 100%;
+  }
+
+  .CoursesMain .coursesMain-img img {
+    width: 100%;
+  }
+
+  .CoursesMain .coursesMain-detalis .coursesMain-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .CoursesMain .coursesMain-detalis .coursesMain-btn .enroll,
+  .CoursesMain .coursesMain-detalis .coursesMain-btn .enrolled {
+    width: 15rem;
+  }
+}

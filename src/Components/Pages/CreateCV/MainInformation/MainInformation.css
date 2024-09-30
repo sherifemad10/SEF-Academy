@@ -1,0 +1,117 @@
+.MainInformation {
+  width: 100%;
+}
+
+/* ==================
+   MainInformation-form
+==================== */
+.MainInformation .MainInformation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}
+
+/* =====================
+  MainInformation-frist-last-name
+================= */
+
+.MainInformation .MainInformation-frist-last-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.MainInformation .MainInformation-frist-last-name .frist-last-name-fristname,
+.MainInformation .MainInformation-frist-last-name .frist-last-name-lastname,
+.MainInformation .MainInformation-form .MainInformation-your-Profession,
+.MainInformation .MainInformation-form .MainInformation-location,
+.MainInformation .MainInformation-form .MainInformation-contact-number,
+.MainInformation .MainInformation-form .MainInformation-email,
+.MainInformation .MainInformation-form .MainInformation-PhoneNumber {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  flex: 1;
+}
+
+.MainInformation .MainInformation-form label {
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.MainInformation .MainInformation-form input {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* =====================
+MainInformation-your-Profession
+================= */
+.MainInformation-your-Profession,
+.MainInformation .MainInformation-location,
+.MainInformation .MainInformation-contact-number,
+.MainInformation .MainInformation-email,
+.MainInformation .MainInformation-PhoneNumber {
+  width: 100%;
+}
+
+/* ==========================
+    PhoneInput
+=================== */
+
+.react-tel-input .flag-dropdown {
+  background-color: #3c3b3bae !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.react-tel-input .country-list {
+  background-color: #151515 !important;
+  border: none !important;
+  color: #fff !important;
+  width: 20rem !important;
+}
+
+.MainInformation .MainInformation-PhoneNumber Input {
+  padding: 0 4rem;
+}
+
+/* ==========================
+MainInformation-continue
+=================== */
+
+/* .MainInformation-continue{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.MainInformation-continue button{
+  padding: 1.1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+} */

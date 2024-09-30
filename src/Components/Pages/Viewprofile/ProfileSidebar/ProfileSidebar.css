@@ -1,0 +1,155 @@
+.ProfileSidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 30rem;
+  gap: 2rem;
+  margin-bottom: 15rem;
+  background-color: #151515b6;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+/* ==================
+   Personal-info
+===================== */
+.ProfileSidebar .Personal-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+}
+
+.ProfileSidebar .Personal-info .Personal-info-title{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: var(--SemiBold);
+  background-color: #131313;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+}
+
+/* ======================
+    Personal-info-text
+======================== */
+.ProfileSidebar .Personal-info .Personal-info-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+.ProfileSidebar .Personal-info .Personal-info-text p{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.ProfileSidebar .Personal-info .Personal-info-text p span{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.ProfileSidebar .Personal-info .Personal-info-text h6{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.ProfileSidebar .Personal-info .Personal-info-text h6{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+
+/* ===================
+  Contact-Info-text
+==================== */
+.ProfileSidebar .Contact-Info-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.ProfileSidebar .Contact-Info-email{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.ProfileSidebar .Contact-Info-email h6{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: .5rem;
+  font-size: 1.5rem;
+}
+.ProfileSidebar .Contact-Info-email h6 span{
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  color: var(--primary-color);
+}
+.ProfileSidebar .Contact-Info-email p{
+  margin-left: 2rem;
+}
+
+/* ================
+       edit
+================== */
+.ProfileSidebar .Personal-info-input{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+.ProfileSidebar .Personal-info-input p{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+.ProfileSidebar  input{
+  width: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: #131313;
+  color: #fff;
+  border: 1px solid var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+/* ===============
+    Responsive
+ ================== */
+
+ @media screen and (max-width: 940px) {
+  .ProfileSidebar{
+    width: 100%;
+    margin-bottom: 5rem;
+
+  }
+ }
+
+
+
+
+

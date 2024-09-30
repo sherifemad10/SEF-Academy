@@ -1,0 +1,28 @@
+.UploadimgExam{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.uploadimgExam{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  cursor: pointer;
+}
+
+.UploadimgExam .uploadimgExam .uploadimg-icon{
+  font-size: 2rem;
+  color: var(--primary-color);
+}

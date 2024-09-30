@@ -1,0 +1,167 @@
+.ArticleDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50rem;
+}
+
+/* ================
+    articles-wrapper
+=================== */
+.ArticleDetails-Wrapper {
+  background-image: url(../../../../public/assets/secondary_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.ArticleDetails-Wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* ================
+  ArticleDetails-contant
+=================== */
+.ArticleDetails-contant {
+  margin-top: 20rem !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================
+  ArticleDetails-header
+=================== */
+
+.ArticleDetails-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 10rem;
+  gap: 1rem;
+}
+
+.ArticleDetails-header .ArticleDetails-category p {
+  font-size: 2rem;
+  position: relative;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.ArticleDetails-header .ArticleDetails-category p::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 0;
+}
+
+/* =================
+ ArticleDetails-title-time
+==================== */
+
+.ArticleDetails-title-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ArticleDetails-title-time .ArticleDetails-title {
+  color: #fff;
+}
+
+.ArticleDetails-title-time .ArticleDetails-title h4 {
+  font-size: 3rem;
+}
+
+.ArticleDetails-title-time .ArticleDetails-time {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+}
+
+.ArticleDetails-title-time .ArticleDetails-time .clock {
+  color: var(--primary-color);
+}
+
+/* =================
+ ArticleDetails-img
+==================== */
+
+.ArticleDetails-img {
+  width: 100%;
+  height: 80vh;
+  background-color: #161817;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.ArticleDetails-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+/* =================
+ ArticleDetails-details
+==================== */
+
+.ArticleDetails-details {
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.ArticleDetails-details p {
+  font-size: 2rem;
+}
+
+/* ===================
+    Responsive
+=================== */
+
+@media screen and (max-width: 935px) {
+  .ArticleDetails {
+    padding-bottom: 80rem;
+  }
+
+  .ArticleDetails-title-time h4 {
+    font-size: 3rem;
+  }
+
+  .ArticleDetails-img {
+    height: fit-content;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ArticleDetails {
+    padding-bottom: 80rem;
+  }
+
+  .ArticleDetails-title-time h4 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,196 @@
+.JobSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 26rem;
+}
+
+.JobSidebar .JobSidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+  width: 100%;
+  background-color: #151515bc;
+  padding: 2rem;
+  color: #fff;
+}
+
+/* ==================
+   JobSidebar-filter
+======================= */
+.JobSidebar .JobSidebar-wrapper .JobSidebar-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(12, 12, 12, 0.686);
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.JobSidebar .JobSidebar-wrapper h5 {
+  font-size: 2rem;
+  color: #fff;
+}
+.JobSidebar .JobSidebar-wrapper .JobSidebar-filter button {
+  padding: 0.6rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* ==================
+  JobSidebar-location
+  ======================= */
+.JobSidebar .JobSidebar-wrapper .JobSidebar-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.JobSidebar .JobSidebar-wrapper .JobSidebar-location h5 {
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(12, 12, 12, 0.559);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.JobSidebar .JobSidebar-wrapper .jobtype-fulltime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(12, 12, 12, 0.436);
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+}
+
+/* ======================
+      checkbox
+  ======================== */
+
+.checkbox-wrapper-46 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.checkbox-wrapper-46 .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+.checkbox-wrapper-46 .cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #506eec;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.checkbox-wrapper-46 .cbx span:last-child {
+  padding-left: 8px;
+}
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+  border-color: #fff;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+  background: var(--primary-color);
+  border-color: #fff;
+  animation: wave-46 0.4s ease;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+/* ================
+    create-cv
+=================== */
+.JobSidebar .create-cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.JobSidebar .create-cv button {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.5s;
+}
+.JobSidebar .create-cv button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}

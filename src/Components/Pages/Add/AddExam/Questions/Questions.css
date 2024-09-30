@@ -1,0 +1,315 @@
+.Questions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
+.question-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  width: 90%;
+}
+
+.Questions-contant{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  border: 2px dashed var(--primary-color);
+  border-radius: .5rem;
+  padding: 2rem;
+}
+.Questions .question-mark,
+.Questions .typeQuestion-img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Questions .question-mark .question,
+.Questions .question-mark .mark{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  flex: 2;
+  margin-right: 2rem;
+}
+.Questions .question-mark .mark{
+ flex: 1;
+}
+
+.Questions label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+.Questions input,
+.Questions select{
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* =================
+  typeQuestion-img
+======================= */
+.Questions .typeQuestion-img .typeQuestion,
+.Questions .typeQuestion-img .Question-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  flex: 1;
+  margin-right: 2rem;
+}
+
+/* ================
+         Answer
+=================== */
+.Questions .Answer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+/* ======================
+  tureFlase && multipleChoose
+======================= */
+.Questions .Answer .tureFlase,
+.Questions .Answer .multipleChoose,
+.Questions.Answer.shortAnswer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.Questions .Answer label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+
+.Questions .Answer .option-true,
+.Questions .Answer .option-false{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.Questions .Answer .true-input,
+.Questions .Answer .false-input{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  padding: 0 1rem;
+  width: 50%;
+}
+.Questions .Answer input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  background: transparent;
+}
+
+.Questions .Answer .true-icon,
+.Questions .Answer .false-icon{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;  
+  width: 60%;
+  background-color: #355d41;
+  padding: .5rem 0;
+  border-radius: 5px;
+  opacity: .8;
+}
+
+.Questions .Answer .false-icon{
+  background-color: #5d3535;
+}
+
+/* ==================
+   shortAnswer
+==================== */
+
+.Questions .Answer .true-Answer{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  width: 100%;
+  position: relative;
+}
+
+.Questions .Answer .true-Answer .true-icon{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: fit-content;
+  background-color: #355d41;
+  padding:.5rem 0;
+  border-radius: 5px;
+  opacity:.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+.Questions .Answer textarea{
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  resize: none;
+}
+
+/* ==============
+add-other-questions
+================= */
+
+.Questions .add-remove{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: calc(100% - 85%);
+  
+}
+
+.Questions .add-other-questions{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.Questions .add-other-questions p{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.Questions .add-other-questions p span{
+  font-weight: var(--SemiBold);
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+/* ===================
+   Responsive
+================= */
+
+@media (max-width: 650px) {
+  .Questions{
+    margin-bottom: 2rem;
+  }
+
+  .question-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .Questions-contant{
+    width: 100%;
+  }
+
+  .Questions .add-remove{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .Questions .option-false,
+  .Questions .option-true,
+  .Questions .Answer .true-input,
+  .Questions .Answer .false-input,
+  .Questions .Answer .true-Answer,
+  .Questions .shortAnswer,
+  .Questions, .true-Answer{
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .typeQuestion-img,
+  .question-mark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .Questions .typeQuestion-img .typeQuestion,
+  .Questions .typeQuestion-img .Question-img,
+  .Questions .question-mark .question,
+  .Questions .question-mark .mark{
+    width: 100%;
+  }
+
+}
+
+
+

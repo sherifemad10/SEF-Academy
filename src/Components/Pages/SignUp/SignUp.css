@@ -1,0 +1,179 @@
+.SignUp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #151515;
+}
+.SignUp .signin-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #22222256;
+  backdrop-filter: blur(2rem);
+  border-radius: 1rem;
+  padding: 3rem 1rem;
+  color: #fff;
+}
+
+/* ==================
+  signin-img
+=================== */
+
+.SignUp .signin-wrapper .signin-img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 5rem;
+  margin-top: -8rem;
+  border: 1px solid var(--primary-color);
+}
+
+.SignUp .signin-wrapper .signin-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* =======================
+    signup-form
+========================= */
+
+.SignUp .signin-wrapper .signup-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.SignUp .signin-wrapper .signup-form .signup-form-fristName-secondName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+
+.SignUp .signup-form-fristName,
+.SignUp .signup-form-lastName,
+.SignUp .signup-form-email,
+.SignUp .signup-form-password{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  background-color: #3c3b3bae;
+  border-radius: 5px;
+}
+
+.SignUp .signup-form span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  opacity: .6;
+  width: 3rem;
+}
+
+.SignUp .signup-form input{
+  padding: 1.2rem 1.5rem;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  width: calc(100% - 4rem);
+}
+
+.SignUp .signup-password-confirm{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 3rem;
+}
+
+/* =====================
+   signup-form-submit
+======================== */
+
+.SignUp .signin-wrapper .signup-form .signup-form-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.SignUp .signin-wrapper .signup-form .signup-form-submit button{
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.SignUp .signin-wrapper .signup-form .signup-form-submit button:active{
+  scale: .9;
+}
+
+/* ==============
+signup-form-haveaccunt
+================ */
+
+.SignUp .signin-wrapper .signup-form .signup-form-haveaccunt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.SignUp .signin-wrapper .signup-form .signup-form-haveaccunt p{
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+}
+
+.SignUp .signin-wrapper .signup-form .signup-form-haveaccunt a{
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* =================
+   Responsive
+================== */
+
+@media only screen and (max-width: 500px) {
+  .SignUp .signin-wrapper .signup-form .signup-form-fristName-secondName,
+  .SignUp .signup-password-confirm{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,61 @@
+.Coursess {
+  /* padding-top: 20rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 70rem;
+}
+
+/* ================
+    Coursess-wrapper
+=================== */
+
+.Coursess-wrapper {
+  background-image: url(../../../../public/assets/secondary_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.Coursess-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* ================
+    coursess-contant
+=================== */
+.coursess-contant {
+  margin-top: 20rem !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==============
+    responsive
+=================== */
+
+@media (max-width: 1056px) {
+  .Coursess {
+    padding-bottom: 120rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Coursess {
+    padding-bottom: 180rem;
+  }
+}

@@ -1,0 +1,36 @@
+.coursesHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  color: #fff;
+}
+
+.coursesHeader .catogray {
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.coursesHeader .catogray::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 6rem;
+  height: 1.5px;
+  background-color: var(--primary-color);
+}
+
+.coursesHeader h6 {
+  font-size: 3.7rem;
+}
+
+.coursesHeader .instructor {
+  font-size: 1.2rem;
+}
+
+.coursesHeader .instructor span {
+  color: var(--primary-color);
+}

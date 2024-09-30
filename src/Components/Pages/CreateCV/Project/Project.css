@@ -1,0 +1,114 @@
+.Project-page {
+  width: 100%;
+}
+
+/* ==========================
+  Project-page-from
+======================= */
+
+.Project-page .Project-page-from {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}
+
+/* ===================
+   Project-from-wrapper
+====================== */
+
+.Project-page .Project-page-from .Project-from-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* ===================
+   Project-from-contant
+====================== */
+
+.Project-page .Project-from-contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  border: 2px dashed var(--primary-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 3;
+}
+
+/* ===================
+   Project-from-input
+====================== */
+
+.Project-page .Project-from-contant-name,
+.Project-page .Project-from-contant-url,
+.Project-page .Project-from-contant-data,
+.Project-page .Project-from-contant-dec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.Project-page .Project-page-from label {
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+
+.Project-page .Project-page-from input {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+.Project-page .Project-page-from textarea {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  resize: none;
+}
+
+/* ==================
+  WorkExperience-page-form-add-remove
+===================== */
+
+.Project-page .Project-page-form-add-remove {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.Project-page .Project-page-form-add-remove button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  outline: none;
+  border: none;
+}

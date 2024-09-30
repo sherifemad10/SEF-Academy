@@ -1,0 +1,81 @@
+.YourLinks-page {
+  width: 100%;
+}
+/* ====================
+   YourLinks-page-form
+====================== */
+.YourLinks-page .YourLinks-page-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}
+
+/* ====================
+    links-input
+====================== */
+
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-linkedin,
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-portfolio,
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-github {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-linkedin label,
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-portfolio label,
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-github label {
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-linkedin input,
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-portfolio input,
+.YourLinks-page .YourLinks-page-form .YourLinks-page-form-github input {
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* =================
+    YourLinks-continue-back
+ ================== */
+
+/* .YourLinks-continue-back{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+ }
+
+ .YourLinks-continue-back button{
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  cursor: pointer;
+  border: none;
+  outline: none;
+ }
+
+ .YourLinks-continue-back .Back{
+  background-color: var(--secondary-color);
+  color: #000;
+ } */

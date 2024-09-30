@@ -1,0 +1,41 @@
+.CoursesSidebarr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 30%;
+  color: #fff;
+  background-color: #141414;
+  padding: 2rem;
+  margin-left: 20px;
+  border-radius: 1rem;
+  gap: 7rem;
+  margin-top: 10rem;
+}
+
+.CoursesSidebarr .coursesSidebar-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.CoursesSidebarr .coursesSidebar-text h6 {
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+  color: var(--primary-color);
+}
+
+/* ===================
+    Responsive
+==================== */
+
+@media only screen and (max-width: 930px) {
+  .CoursesSidebarr {
+    width: 100%;
+    margin-top: 7rem;
+    margin-left: 0;
+  }
+}

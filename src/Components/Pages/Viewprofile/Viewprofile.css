@@ -1,0 +1,42 @@
+ .Viewprofile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60rem;
+ }
+
+ /* ==================
+    viewProfile-body
+ ======================= */
+ .viewProfile-body{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+ }
+
+ /* ===============
+    Responsive
+ ================== */
+
+ @media screen and (max-width: 940px) {
+  .viewProfile-body{
+    flex-direction: column;
+  }
+
+  .Viewprofile{
+    padding-bottom: 100rem;
+  }
+
+ }
+
+ @media screen and (max-width: 430px) {
+  .Viewprofile{
+    padding-bottom: 150rem;
+  }
+ }

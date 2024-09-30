@@ -1,0 +1,385 @@
+.CV {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #fff;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+/* ==================
+   cv-name-information
+================= */
+
+.CV .cv-name-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.CV .cv-name-information .cv-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.CV .cv-name-information .cv-name h1 {
+  font-size: 4.7rem;
+  text-transform: capitalize;
+}
+
+.CV .cv-name-information .cv-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.CV .cv-name-information .cv-information p {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* ====================
+     your-links
+==================== */
+.CV .your-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.CV .your-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.CV .your-links p,
+.CV .your-links a {
+  color: #000;
+  font-size: 1rem;
+}
+
+/* ======================
+        Summary
+===================== */
+
+.CV .Summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.CV .Summary h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+.CV .Summary p {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* ===================
+   education
+=================== */
+
+.CV .your-education {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 100%;
+}
+.CV .your-education h2 {
+  font-size: 2.5rem;
+}
+
+.CV .your-education .your-education-warpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.CV .your-education .your-education-warpper .your-education-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.CV .your-education .your-education-warpper .your-education-text h4 {
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.CV .your-education .your-education-warpper .your-education-text p {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.CV .start-graduate-year p {
+  font-size: 1.1rem;
+}
+
+/* ===================
+   your-work-experience
+======================== */
+
+.CV .your-work-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.CV .your-work-experience h2 {
+  font-size: 2.5rem;
+}
+
+.CV .your-work-experience .your-work-experience-warpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.your-work-experience-contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  flex: 1;
+}
+
+.CV .your-work-experience-text-year {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.CV
+  .your-work-experience
+  .your-work-experience-warpper
+  .your-work-experience-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  flex: 4;
+}
+
+.CV
+  .your-work-experience
+  .your-work-experience-warpper
+  .your-work-experience-text
+  h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.CV
+  .your-work-experience
+  .your-work-experience-warpper
+  .your-work-experience-text
+  p {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.CV
+  .your-work-experience
+  .your-work-experience-warpper
+  .your-work-experience-text
+  .role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.CV .your-work-experience .your-work-experience-year {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* flex: 1; */
+}
+
+.CV .your-work-experience .your-work-experience-year p {
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+/* ====================
+   your-project
+====================== */
+
+.CV .your-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.CV .your-project h2 {
+  font-size: 2.5rem;
+}
+
+.CV .your-project .your-project-warpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+
+.CV .your-project-contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
+.CV .your-project-warpper .your-project-text-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.CV .your-project .your-project-warpper .your-project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  flex: 4;
+}
+
+.CV .your-project .your-project-warpper .your-project-text h4,
+.CV .your-project .your-project-warpper .your-project-text a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.CV .your-project-year p {
+  font-size: 1.1rem;
+}
+
+/* ==================
+   your-skills
+==================== */
+
+.CV .your-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.CV .your-skills h2 {
+  font-size: 2.5rem;
+}
+
+.CV .your-skills .your-skills-text {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.CV .your-skills .your-skills-text ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.CV .your-skills .your-skills-text ul li {
+  color: #000;
+  list-style: circle;
+  list-style-position: inside;
+  font-size: 1.1rem;
+  font-weight: var(--SemiBold);
+}
+
+/* ===================
+     your-languages
+======================== */
+
+.CV .your-languages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.CV .your-languages h2 {
+  font-size: 2.5rem;
+}
+
+.CV .your-languages .your-languages-text {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.CV .your-languages .your-languages-text ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.CV .your-languages .your-languages-text ul li {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: var(--SemiBold);
+}

@@ -1,0 +1,208 @@
+.Othercourses {
+  padding: 20rem 0;
+}
+
+.title-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.title-search h6 {
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+
+/* ==================
+        search
+====================== */
+.search-courese .input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+
+.search-courese .input {
+  border-style: none;
+  height: 40px;
+  width: 40px;
+  /* padding: 10px; */
+  outline: none;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 3px var(--primary-color);
+  padding-right: 40px;
+  color: #fff;
+}
+
+.search-courese .input::placeholder,
+.search-courese .input {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
+}
+
+.search-courese .input::placeholder {
+  color: #8f8f8f;
+}
+
+.search-courese .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border-style: none;
+  border-radius: 50%;
+  pointer-events: painted;
+  background-color: transparent;
+  transition: 0.2s linear;
+}
+
+.search-courese .icon:focus ~ .input,
+.search-courese .input:focus {
+  box-shadow: none;
+  width: 250px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 3px solid var(--primary-color);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+/* ==================
+      course-list
+====================== */
+
+.course-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.course-list table {
+  width: 100%;
+}
+
+.course-list tr {
+  background-color: transparent;
+}
+
+.course-list th,
+.course-list .table-startdate,
+.course-list .table-level {
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+/* =====================
+   .table-body-img-lesson
+======================== */
+
+.table-body-img-lesson {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.table-body-img-lesson img {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 1rem;
+}
+
+.table-body-title-lesson-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.table-body-title-lesson-text h6 {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+}
+
+.table-body-title-lesson-text p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.table-body-title-lesson-text p span {
+  font-weight: var(--SemiBold);
+  color: var(--primary-color);
+}
+
+/* ===============
+ table-action
+=============== */
+
+.table-action {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-action button {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.table-action button:hover {
+  background-color: var(--secondary-color);
+}
+
+.table-action p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  cursor: pointer;
+}
+
+.Othercourses .Pagination {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* ===================
+       Responsive
+======================= */
+
+@media (max-width: 1056px) {
+  .course-list {
+    background-color: transparent;
+  }
+  .othercourses-table {
+    display: none;
+  }
+
+  .OtherCoursesCardMobile {
+    display: block !important;
+  }
+}

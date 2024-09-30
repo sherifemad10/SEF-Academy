@@ -1,0 +1,291 @@
+.AddCertificate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 30rem;
+
+}
+
+.AddCertificate-wrapper{
+  background-image: url(../../../../public/assets/secondary_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.AddCertificate-wrapper::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* ======================
+    AddAritcle-contant container
+============================= */
+
+.AddAritcle-contant{
+  position: relative;
+  z-index: 2;
+  padding: 30rem 0;
+}
+
+/* =================== 
+   certificate-body
+======================= */
+.certificate-body{
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  gap: 2rem;
+}
+
+/* ==============  
+   add-certificate-form
+================== */
+
+.add-certificate-form {
+  width: calc(100% - 30rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 3;
+}
+
+/* ===============  
+   add-certificate-header
+======================== */
+.add-certificate-form .add-certificate-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.add-certificate-form .add-certificate-header h5{
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+.add-certificate-form .add-certificate-header h5::before{
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.add-certificate-form .add-certificate-header h5:hover::before{
+  width: 100%;
+}
+
+/* ==============  
+   Name-dataenter-endData
+======================== */
+
+.Name-dataenter-endData{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.Name-dataenter-endData .Name,
+.Name-dataenter-endData .dateAcquired,
+.Name-dataenter-endData .uploadData{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 3;
+}
+
+.Name-dataenter-endData label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+
+.Name-dataenter-endData input,
+.Name-dataenter-endData select{
+  padding: 1.4rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  width: 100%;
+}
+
+/* ================
+   couress
+=================== */
+.certificate-body .couress{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.certificate-body .couress label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+
+.certificate-body .couress input{
+  padding: 1.4rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  width: 100%;
+}
+
+/* ================
+   upload-Certificate
+================== */
+
+.upload-Certificate{
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload-Certificate label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.upload-Certificate-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 3;
+}
+
+.upload-Certificate .drag{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.upload-Certificate .drag span{
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  color: var(--primary-color);
+}
+
+.upload-Certificate .type{
+  color: var(--secondary-color);
+}
+
+/* ==================
+   upload or cancel
+====================== */
+.upload-cancel{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-cancel button{
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.upload-cancel button:hover{
+  scale: .9;
+}
+
+.upload-cancel .cancel{
+  background-color: var(--secondary-color);
+}
+
+/* =============
+  responsive
+============= */
+
+@media (max-width: 1280px){
+   .certificate-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+   }
+
+   .add-certificate-form{
+    width: 100%;
+    background-color: #151515b6;
+    padding: 3rem;
+    border-radius: 1rem;
+   }
+}
+
+@media (max-width: 675px){
+  .AddCertificate{
+    padding-bottom: 80rem;
+  }
+
+  .Name-dataenter-endData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .Name-dataenter-endData .Name,
+  .Name-dataenter-endData .dateAcquired,
+  .Name-dataenter-endData .uploadData{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,196 @@
+.StudentPortalHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  margin: 3rem 0;
+}
+
+/* ================
+  Name-viewProfile
+==================== */
+
+.StudentPortalHeader .Name-viewProfile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  width: 100%;
+}
+
+.StudentPortalHeader .Name-viewProfile h6{
+  font-size: 3rem;
+}
+
+.StudentPortalHeader .Name-viewProfile h6 span{
+  color: var(--primary-color);
+}
+
+.StudentPortalHeader .Name-viewProfile .viewProfile{
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  font-weight: var(--SemiBold);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.StudentPortalHeader .Name-viewProfile .viewProfile:hover{
+  background-color: var(--secondary-color);
+}
+
+/* ==============
+   Exam-courses-user
+=================== */
+
+.StudentPortalHeader .Exam-courses-user{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: #13131397;
+  margin: 3rem 0;
+}
+
+.StudentPortalHeader .Exam-courses-user .upcoming-exam-courses{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.StudentPortalHeader .Exam-courses-user .upcoming-exam-courses .Exam-courses-user-number{
+  border: 1px solid var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.StudentPortalHeader .Exam-courses-user .upcoming-exam-courses .Exam-courses-user-number p{
+  font-size: 3rem;
+  font-weight: var(--SemiBold);
+}
+
+.StudentPortalHeader .Exam-courses-user .upcoming-exam-courses .exam-courses-user-upcoming p{
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =================
+  User-levels
+======================= */
+
+.StudentPortalHeader .User-levels{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.StudentPortalHeader .User-levels .User-levels-number{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.StudentPortalHeader .User-levels .User-levels-number p{
+  font-size: 1.8rem;
+  font-weight: var(--SemiBold);
+  text-transform: uppercase;
+}
+
+/* ==============
+  Progress-bar
+=================== */
+
+.StudentPortalHeader .User-levels .User-levels-bar{
+  width: 100%;
+}
+
+.StudentPortalHeader .User-levels .User-levels-bar .User-levels-bar-fill{
+  width: 100%;
+  height: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+} 
+
+.StudentPortalHeader .User-levels .User-levels-bar .User-levels-bar-fill .User-levels-bar-fill-inner{
+  height: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+/* ==============
+  AllClear
+=================== */
+
+.StudentPortalHeader .AllClear{
+  color: #fff;
+  width: fit-content;
+  background-color: #2e2e2e;
+  padding: 1.2rem 2rem;
+  border-radius: .5rem;
+}
+
+.StudentPortalHeader .AllClear p{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-weight: var(--SemiBold);
+}
+
+.StudentPortalHeader .AllClear p span{
+  color: var(--primary-color);
+  font-size: 2.7rem;
+}
+
+/* ===================
+    Responsive
+====================== */
+
+@media (max-width: 700px) {
+  .StudentPortalHeader .Name-viewProfile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .StudentPortalHeader .Exam-courses-user{
+    overflow: scroll;
+  }
+
+  .Exam-courses-user::-webkit-scrollbar{
+    display: none;
+  }
+   
+}
+
+
+
+
+
+
+
+  
+
+ 

@@ -1,0 +1,149 @@
+.ProfileAboutYou{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: calc(100% - 33rem);
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+/* ==================
+    About-you
+================= */
+
+.ProfileAboutYou .About-you{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+  background-color: #15151599;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+.ProfileAboutYou .About-you .about-you-tittle{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: var(--SemiBold);
+  border-radius: .5rem;
+}
+
+.ProfileAboutYou .About-you .about-you-tittle h6{
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+}
+
+/* ==================
+    coursess-in-progress
+================= */
+.ProfileAboutYou .coursess-in-progress{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+  color: #fff;
+}
+.ProfileAboutYou .coursess-in-progress .coursess-in-progress-tittle{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: var(--SemiBold);
+}
+.ProfileAboutYou .coursess-in-progress .coursess-in-progress-tittle h6{
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+}
+
+/* ==================
+    coursess-in-progress-card
+================= */
+.ProfileAboutYou .coursess-in-progress .coursess-in-progress-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+  color: #fff;
+  background-color: #15151599;
+  border-radius: 1rem;
+}
+.ProfileAboutYou .coursess-in-progress .coursess-in-progress-card .coursess-in-progress-card-name-Instructor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+}
+
+.ProfileAboutYou .coursess-in-progress .coursess-in-progress-card .coursess-in-progress-card-name-Instructor h6{
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+}
+
+.ProfileAboutYou .coursess-in-progress .coursess-in-progress-card .coursess-in-progress-card-name-Instructor p{
+  font-size: 1.5rem;
+  font-weight: var(--Regular);
+}
+
+.ProfileAboutYou .coursess-in-progress .coursess-in-progress-card .coursess-in-progress-card-name-Instructor p span{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #BF9B30;
+}
+
+.ProfileAboutYou .coursess-in-progress .coursess-in-progress-card .coursess-in-progress-card-level p{
+  font-size: 2.5rem;
+  font-weight: var(--SemiBold);
+}
+
+/* ============== 
+    edit
+================ */
+
+.ProfileAboutYou .about-you-dec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 2rem;
+}
+
+.ProfileAboutYou .about-you-dec textarea{
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  background-color: #15151599;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  resize: none;
+}
+
+/* ===============
+    Responsive
+ ================== */
+
+ @media screen and (max-width: 940px) {
+  .ProfileAboutYou{
+    width: 100%;
+  }
+ }
+
+

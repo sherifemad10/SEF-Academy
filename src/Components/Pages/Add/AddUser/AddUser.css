@@ -1,0 +1,351 @@
+.AddUser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 30rem;
+}
+
+.AddUser-wrapper{
+  background-image: url(../../../../public/assets/secondary_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.AddUser-wrapper::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* ==================
+  AddUser-contant
+======================== */
+
+.AddUser-wrapper .AddUser-contant {
+  margin-top: 20rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==============  
+   article-body
+================== */
+
+.AddUser-wrapper .AddUser-contant .AddUser-body{
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  gap: 2rem;
+}
+
+/* ==============  
+   add-user-form
+================== */
+
+.AddUser-wrapper .AddUser-contant .add-user-form{
+  width: calc(100% - 30rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 3;
+}
+
+/* ==============  
+  add-artical-header
+================== */
+
+.AddUser-wrapper .AddUser-contant .add-user-form .add-artical-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 2rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .add-artical-header h5{
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .add-artical-header h5::before{
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .add-artical-header h5:hover::before{
+  width: 100%;
+}
+
+/* form */
+
+/* ===================
+   frName-seName-state
+======================== */
+
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .fristName,
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .secondName,
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .state{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .fristName label,
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .secondName label,
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .state label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .fristName input,
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .secondName input,
+.AddUser-wrapper .AddUser-contant .add-user-form .frName-seName-state .state select{
+  /* width: 28rem;; */
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* =================
+  email-role
+================= */
+
+.AddUser-wrapper .AddUser-contant .add-user-form .email-role{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .email-role .email{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 3;
+}
+.AddUser-wrapper .AddUser-contant .add-user-form .email-role .role{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .email-role .email label,
+.AddUser-wrapper .AddUser-contant .add-user-form .email-role .role label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .email-role .email input,
+.AddUser-wrapper .AddUser-contant .add-user-form .email-role .role select{
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* =================
+  mobile-id
+================= */
+
+.AddUser-wrapper .AddUser-contant .add-user-form .mobile-id{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .mobile-id .mobile,
+.AddUser-wrapper .AddUser-contant .add-user-form .mobile-id .user-id{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .mobile-id .mobile label,
+.AddUser-wrapper .AddUser-contant .add-user-form .mobile-id .user-id label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .mobile-id .mobile input,
+.AddUser-wrapper .AddUser-contant .add-user-form .mobile-id .user-id input{
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* =================
+  password
+================= */
+
+.AddUser-wrapper .AddUser-contant .add-user-form .password{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .password .pass,
+.AddUser-wrapper .AddUser-contant .add-user-form .password .confirm-pass{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .password .pass label,
+.AddUser-wrapper .AddUser-contant .add-user-form .password .confirm-pass label{
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.AddUser-wrapper .AddUser-contant .add-user-form .password .pass input,
+.AddUser-wrapper .AddUser-contant .add-user-form .password .confirm-pass input{
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+}
+
+/* ==================
+   Responsive
+====================== */
+
+@media (max-width: 1060px) {
+  .AddUser-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .AddUser-wrapper .AddUser-contant .add-user-form{
+    width: 100%;
+    background-color: #151515b6;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .frName-seName-state{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .AddUser .fristName,
+  .AddUser .secondName,
+  .AddUser .state{
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .AddUser{
+   padding-bottom: 70rem;
+  }
+
+  .AddUser .email-role,
+  .AddUser .mobile-id,
+  .AddUser .password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .AddUser .email,
+  .AddUser .role,
+  .AddUser .mobile,
+  .AddUser .user-id,
+  .AddUser .pass,
+  .AddUser .confirm-pass{
+    width: 100%;
+  }
+
+
+}
+
+
+
+
+
+
+

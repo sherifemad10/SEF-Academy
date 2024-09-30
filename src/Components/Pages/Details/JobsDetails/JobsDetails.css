@@ -1,0 +1,270 @@
+.JobsDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  padding-bottom: 100rem;
+}
+
+.JobsDetails-wrappper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 80%;
+  margin: 10rem 0;
+}
+
+/* ===================
+    .JobsDetails-header
+======================== */
+
+.JobsDetails-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.686);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.JobsDetails-header-title-state-apply {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.JobsDetails-header-title-state-apply h2 {
+  font-size: 3rem;
+  font-weight: var(--SemiBold);
+}
+
+.JobsDetails-header-title-state-apply .jobType-status {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.JobsDetails-header-title-state-apply .jobType-status p {
+  font-size: 1.5rem;
+  font-weight: var(--Regular);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.JobsDetails-header-title-state-apply h6 {
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+  color: var(--primary-color);
+}
+
+.JobsDetails-header-title-state-apply .posted-time {
+  font-size: 1.3rem;
+  font-weight: var(--Regular);
+  color: var(--secondary-color);
+}
+
+.JobsDetails-header-title-state-apply button {
+  padding: 1.1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin: 1rem 0;
+}
+
+/* ====================
+  .JobsDetails-header-img
+===================== */
+.JobsDetails-header-img {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* ====================
+    JobsDetails-aboutCompony
+========================= */
+
+.JobsDetails-aboutCompony {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.686);
+  padding: 1rem 2rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.JobsDetails-aboutCompony h6 {
+  font-size: 2.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.JobsDetails-aboutCompony p {
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: var(--secondary-color);
+}
+
+/* =================
+   Apply-for-job
+======================= */
+
+.Apply-for-job {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 100%;
+  color: #fff;
+  margin-top: 5rem;
+}
+
+.email-experence {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.email-experence .your-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  flex: 2;
+}
+
+.email-experence .Years-Of-Experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  flex: 1;
+}
+
+.email-experence label,
+.Mobile-number label {
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.email-experence input,
+.Mobile-number input {
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: #3c3b3bae;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: var(--Regular);
+  color: #fff;
+  width: 100%;
+}
+
+.Mobile-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 50%;
+}
+
+/* =======================
+    cancel-submit-btn
+=========================== */
+
+.cancel-submit-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.JobsDetails .cancel-submit-btn .cancel {
+  background-color: var(--secondary-color);
+}
+.JobsDetails .cancel-submit-btn .cancel:active,
+.JobsDetails .cancel-submit-btn .submit:active {
+  scale: 0.9;
+  transition: 0.5s;
+}
+
+/* ==================
+   Responsive
+================= */
+
+@media only screen and (max-width: 795px) {
+  .JobsDetails-wrappper {
+    width: 100%;
+  }
+
+  .Apply-for-job {
+    width: 100%;
+  }
+
+  .email-experence,
+  .Mobile-number {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .JobsDetails {
+    padding-bottom: 120rem;
+  }
+  .email-experence input,
+  .Mobile-number input {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .JobsDetails {
+    padding-bottom: 150rem;
+  }
+
+  .JobsDetails-header-title-state-apply button {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .email-experence input,
+  .Mobile-number input {
+    width: 25rem;
+  }
+}

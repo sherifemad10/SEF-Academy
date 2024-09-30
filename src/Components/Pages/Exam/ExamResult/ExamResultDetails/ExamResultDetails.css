@@ -1,0 +1,76 @@
+.ExamResultDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+  padding: 10rem 5rem;
+  color: #fff;
+  gap: 2.5rem;
+  background-color: #15151599;
+  margin: 15rem auto;
+  border-radius: 1rem;
+}
+
+/* =====================
+  ExamResultDetails-btn-progressbar
+====================== */
+
+.ExamResultDetails .ExamResultDetails-btn-progressbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ExamResultDetails .ExamResultDetails-btn-progressbar button{
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+/* ========================
+  ExamResultDetails-text
+========================= */
+
+.ExamResultDetails .ExamResultDetails-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 3rem;
+  width: 100%;
+}
+
+.ExamResultDetails .ExamResultDetails-text .Number-of-questions-answered{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.ExamResultDetails .ExamResultDetails-text .Number-of-questions-answered h5{
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+}
+
+.ExamResultDetails .ExamResultDetails-text .Number-of-questions-answered p{
+  font-size: 2rem;
+  font-weight: var(--SemiBold);
+  color: #fff;
+  background-color: rgba(13, 13, 13, 0.753);
+  padding: 1rem 2rem;
+  width: 20rem;
+  text-align: center;
+  border-radius: .5rem;
+}
