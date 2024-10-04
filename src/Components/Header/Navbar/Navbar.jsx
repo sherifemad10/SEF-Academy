@@ -104,13 +104,13 @@ const Navbar = () => {
               {dropdownTech && (
                 <ul className="dropdown-list">
                   <li>
-                    <NavLink to="/business">Laptops</NavLink>
+                    <NavLink to="/business">Front-End</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/business">Phones</NavLink>
+                    <NavLink to="/business">Back-end</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/business">Tablests</NavLink>
+                    <NavLink to="/business">Full-Stake</NavLink>
                   </li>
                 </ul>
               )}
@@ -154,13 +154,13 @@ const Navbar = () => {
               {dropdownCourse && (
                 <ul className="dropdown-list-courses">
                   <li>
-                    <NavLink to="/business">Laptops</NavLink>
+                    <NavLink to="/business">React</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/business">Phones</NavLink>
+                    <NavLink to="/business">JavaScript</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/business">Tablests</NavLink>
+                    <NavLink to="/business">Java</NavLink>
                   </li>
                 </ul>
               )}
